@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-950 text-white; }
+.sunrise {
+  background: radial-gradient(circle at 50% 120%, #f59e0b 10%, #fb923c 20%, #1e293b 55%, #020617 80%);
+  animation: rise 8s ease-in-out infinite alternate;
+}
+@keyframes rise {
+  from { background-position: 50% 100%; }
+  to { background-position: 50% 0%; }
+}
+.card { @apply bg-slate-900/70 border border-slate-700 rounded-xl p-4; }
+.input { @apply w-full p-2 rounded bg-slate-800 border border-slate-600; }
+.btn { @apply px-3 py-2 rounded bg-amber-500 text-black font-semibold; }
